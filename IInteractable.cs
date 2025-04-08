@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject
 {
-    class Program
+    public interface IInteractable
     {
-        static void Main(string[] args)
-        {
-            
-            Game.Run();
-
-        }
+        void Interact(Player player);
     }
 }
