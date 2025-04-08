@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject.Items
 {
-    public class boom : Item
+    public class Boom : Item
     {
-        public boom(Vector2 position)
-            : base('B', position)
+        public Boom(Vector2 position)
+            : base('B', position, 100)
         {
             name = "폭탄";
             description = "적을 공격하는 아이템";

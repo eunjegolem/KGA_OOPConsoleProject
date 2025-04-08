@@ -72,6 +72,10 @@ namespace KGA_OOPConsoleProject
             sceneDic.Add("IslandFieldScene", new IslandFieldScene());
             sceneDic.Add("SwampFieldScene", new SwampFieldScene());
             sceneDic.Add("MountainFieldScene", new MountainFieldScene());
+            sceneDic.Add("ItemShopScene", new ItemShopScene());
+            sceneDic.Add("EquipmentShopScene", new EquipmentShopScene());
+            sceneDic.Add("MagicShopScene", new MagicShopScene());
+            sceneDic.Add("INNScene", new INNScene());
 
             curScene = sceneDic["Title"];
         }

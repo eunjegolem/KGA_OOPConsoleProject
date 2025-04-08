@@ -15,24 +15,24 @@ namespace KGA_OOPConsoleProject.Scenes
             {
               //      01234567890123456789
               /*0*/  "####################",
-              /*1*/  "#        @ @       #",
+              /*1*/  "#                  #",
               /*2*/  "#                  #",
-              /*3*/  "#                  #",
-              /*4*/  "#                  #",
-              /*5*/  "#                  #",
+              /*3*/  "#  ###        ###  #",
+              /*4*/  "#  # #        # #  #",
+              /*5*/  "#  # #        # #  #",
               /*6*/  "#                  #",
+              /*7*/  "#     ########     #",
+              /*8*/  "#     #      #     #",
+              /*9*/  "#     # #### #     #",
+              /*0*/  "#     # #  # #     #",
+              /*1*/  "#     # #  # #     #",
+              /*2*/  "#     #      #     #",
+              /*3*/  "#                  #",
+              /*4*/  "#  ###        ###  #",
+              /*5*/  "#  # #        # #  #",
+              /*6*/  "#  # #        # #  #",
               /*7*/  "#                  #",
               /*8*/  "#                  #",
-              /*9*/  "#@                @#",
-              /*0*/  "#                  #",
-              /*1*/  "#@                @#",
-              /*2*/  "#                  #",
-              /*3*/  "#                  #",
-              /*4*/  "#                  #",
-              /*5*/  "#                  #",
-              /*6*/  "#                  #",
-              /*7*/  "#                  #",
-              /*8*/  "#        @ @       #",
               /*9*/  "####################"
             };
 
@@ -50,7 +50,10 @@ namespace KGA_OOPConsoleProject.Scenes
             gameObjects.Add(new Place("PlainFieldScene", 'G', new Vector2(10, 1)));
             gameObjects.Add(new Place("PlainFieldScene", 'G', new Vector2(1, 10)));
             gameObjects.Add(new Place("PlainFieldScene", 'G', new Vector2(18, 10)));
-
+            gameObjects.Add(new Place("ItemShopScene", 'I', new Vector2(4, 15)));
+            gameObjects.Add(new Place("EquipmentShopScene", 'E', new Vector2(15, 15)));
+            gameObjects.Add(new Place("MagicShopScene", 'M', new Vector2(4, 4)));
+            gameObjects.Add(new Place("INNScene", 'N', new Vector2(15, 4)));
         }
         public override void Enter()
         {
@@ -58,7 +61,23 @@ namespace KGA_OOPConsoleProject.Scenes
             {
                 Game.Player.position = new Vector2(10, 18);
             }
-
+            else if (Game.prevSceneName == "ItemShopScene")
+            {
+                Game.Player.position = new Vector2(4, 15);
+            }
+            else if (Game.prevSceneName == "EquipmentShopScene")
+            {
+                Game.Player.position = new Vector2(15, 15);
+            }
+            else if (Game.prevSceneName == "MagicShopScene")
+            {
+                Game.Player.position = new Vector2(4, 4);
+            }
+            else if (Game.prevSceneName == "INNScene")
+            {
+                Game.Player.position = new Vector2(15, 4);
+            }
+            Game.Player.map = map;
         }
     }
 }

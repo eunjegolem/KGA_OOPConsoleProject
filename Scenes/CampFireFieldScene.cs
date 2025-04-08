@@ -1,4 +1,5 @@
-﻿using KGA_OOPConsoleProject.Maps;
+﻿using KGA_OOPConsoleProject.Items;
+using KGA_OOPConsoleProject.Maps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace KGA_OOPConsoleProject.Scenes
               //      012345678
               /*0*/  "########",
               /*1*/  "#      #",
-              /*2*/  "#      #",
+              /*2*/  "#    # #",
               /*3*/  "#      #",
               /*4*/  "#      #",
               /*5*/  "#      #",
@@ -50,6 +51,7 @@ namespace KGA_OOPConsoleProject.Scenes
                 
             }
             gameObjects.Add(new Potion(new Vector2(3, 4)));
+            gameObjects.Add(new Boom(new Vector2(3, 3)));
         }
         public override void Enter()
         {

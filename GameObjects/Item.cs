@@ -10,10 +10,12 @@ namespace KGA_OOPConsoleProject
     {
         public string name;
         public string description;
+        public int price;
 
-        public Item(char symbol, Vector2 position)
+        public Item(char symbol, Vector2 position, int price)
             : base(ConsoleColor.Yellow, symbol, position, true)
         {
+            this.price = price;
         }
 
         public override void Interact(Player player)

@@ -21,7 +21,7 @@ namespace KGA_OOPConsoleProject.Scenes
               /*7*/  "#                  #",
               /*8*/  "#                  #",
               /*9*/  "#                  #",
-              /*0*/  "#                  #",
+              /*0*/  "#            #     #",
               /*1*/  "#                  #",
               /*2*/  "#                  #",
               /*3*/  "#                  #",
@@ -54,7 +54,7 @@ namespace KGA_OOPConsoleProject.Scenes
             }
             else if (Game.prevSceneName == "PlainFieldScene")
             {
-                Game.Player.position = new Vector2(1, 18);
+                Game.Player.position = new Vector2(18, 1);
             }
             Game.Player.map = map;
         }

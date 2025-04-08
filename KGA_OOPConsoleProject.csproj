@@ -43,13 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Equipments\equipment.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\shop.cs" />
     <Compile Include="IInteractable.cs" />
     <Compile Include="Inventory.cs" />
-    <Compile Include="Items\boom.cs" />
+    <Compile Include="Items\Boom.cs" />
     <Compile Include="Jobs\Job.cs" />
     <Compile Include="Jobs\Warrior.cs" />
+    <Compile Include="Magics\Magic.cs" />
     <Compile Include="Maps\CampfireMap.cs" />
     <Compile Include="Maps\Map.cs" />
     <Compile Include="Player.cs" />
@@ -59,12 +62,16 @@
     <Compile Include="GameObjects\Place.cs" />
     <Compile Include="GameObjects\Item.cs" />
     <Compile Include="Scenes\CampFireFieldScene.cs" />
+    <Compile Include="Scenes\INNScene.cs" />
+    <Compile Include="Scenes\EquipmentShopScene.cs" />
     <Compile Include="Scenes\FieldScene.cs" />
     <Compile Include="Scenes\ForestFieldScene.cs" />
     <Compile Include="Scenes\IslandFieldScene.cs" />
+    <Compile Include="Scenes\MagicShopScene.cs" />
     <Compile Include="Scenes\MountainFieldScene.cs" />
     <Compile Include="Scenes\PlainFieldScene.cs" />
     <Compile Include="Scenes\Scene.cs" />
+    <Compile Include="Scenes\ItemShopScene.cs" />
     <Compile Include="Scenes\SwampFieldScene.cs" />
     <Compile Include="Scenes\Title.cs" />
     <Compile Include="Scenes\TownScene.cs" />

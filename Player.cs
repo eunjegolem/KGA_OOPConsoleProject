@@ -22,12 +22,15 @@ namespace KGA_OOPConsoleProject
         public int MaxHP { get { return maxHP; } }
         public int maxMP;
         public int MaxMP { get { return maxMP; } }
+        public int gold;
+        
         //플레이어정의
         public Player()
         {
             inventory = new Inventory();
             maxHP = 100;
             curHP = maxHP;
+            gold = 0;
         }
         //회복
         public void Heal(int amount)
