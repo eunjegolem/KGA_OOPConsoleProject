@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace KGA_OOPConsoleProject.Equipments
 {
-    class IronSword : Equipment
+    class IronSword : Item
     {
         public IronSword(Vector2 position)
             : base('S', position, 100)
