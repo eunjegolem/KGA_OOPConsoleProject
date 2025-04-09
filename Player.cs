@@ -23,6 +23,9 @@ namespace KGA_OOPConsoleProject
         public int maxMP;
         public int MaxMP { get { return maxMP; } }
         public int gold;
+
+        public int str;
+        
         
         //플레이어정의
         public Player()
@@ -31,6 +34,7 @@ namespace KGA_OOPConsoleProject
             maxHP = 100;
             curHP = maxHP;
             gold = 0;
+            str = 10;
         }
         //회복
         public void Heal(int amount)
@@ -90,7 +94,7 @@ namespace KGA_OOPConsoleProject
             //Console.WriteLine($"레벨: {level}");
             //Console.WriteLine($"HP: {curHp}");
             //Console.WriteLine($"MP: {curMp}");
-            //Console.WriteLine($"힘: {str}");
+            Console.WriteLine($"힘: {str}");
             //Console.WriteLine($"민첩: {agi}");
             //Console.WriteLine($"생명: {vit}");
             //Console.WriteLine($"손재주: {dex}");
