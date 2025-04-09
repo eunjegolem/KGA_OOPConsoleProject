@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace KGA_OOPConsoleProject.GameObjects
 {
-    class shop
+    class Shop
     {
         
         List<Item> items = new List<Item>()
@@ -12,12 +12,12 @@ namespace KGA_OOPConsoleProject.GameObjects
             new Potion(new Vector2(2, 2))
         };
 
-        public void Shop()
-        {
+        //public void Shop()
+        //{
             
 
 
-        }
+        //}
 
         public void ShowItems()
         {

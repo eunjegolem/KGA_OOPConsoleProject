@@ -23,7 +23,7 @@ namespace KGA_OOPConsoleProject.Maps
 
         public override void Interact(Player player)
         {
-            Game.Player.gold += 1;
+            Game.Player.gold += 100;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using KGA_OOPConsoleProject.Items;
+﻿using KGA_OOPConsoleProject.GameObjects;
+using KGA_OOPConsoleProject.Items;
 using KGA_OOPConsoleProject.Maps;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace KGA_OOPConsoleProject.Scenes
               //      012345678
               /*0*/  "########",
               /*1*/  "#      #",
-              /*2*/  "#    # #",
+              /*2*/  "#      #",
               /*3*/  "#      #",
               /*4*/  "#      #",
               /*5*/  "#      #",
@@ -54,16 +55,17 @@ namespace KGA_OOPConsoleProject.Scenes
             gameObjects.Add(new Potion(new Vector2(3, 4)));
             gameObjects.Add(new Boom(new Vector2(3, 3)));
             gameObjects.Add(new Gold(new Vector2(5, 4)));
+            gameObjects.Add(new Trap(new Vector2(4, 4)));
         }
         public override void Enter()
         {
             if (Game.prevSceneName == "Title")
             {
-                Game.Player.position = new Vector2(4, 4);
+                Game.Player.position = new Vector2(4, 5);
             }
             else if (Game.prevSceneName == "ForestFieldScene")
             {
-                Game.Player.position = new Vector2(4, 4);
+                Game.Player.position = new Vector2(4, 5);
             }
             Game.Player.map = map;
         }

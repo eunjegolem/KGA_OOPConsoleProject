@@ -2,7 +2,7 @@
 
 namespace KGA_OOPConsoleProject.Maps
 {
-    class CampfireMap
+    class swamp
     {
         //name = "CampfireMap";
         //mapData = new string[]

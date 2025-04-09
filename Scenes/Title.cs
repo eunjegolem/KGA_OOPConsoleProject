@@ -66,6 +66,7 @@ namespace KGA_OOPConsoleProject.Scenes
                     return;
                 case "2":
                     Game.gameOver = true;
+                    Game.reason = "게임 종료를 입력하셨습니다.";
                     return;
             }
             

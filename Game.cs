@@ -22,6 +22,7 @@ namespace KGA_OOPConsoleProject
         public static Player Player {  get { return player; } }
 
         public static bool gameOver;
+        public static string reason;
 
         public static void Run()
         {
@@ -41,7 +42,7 @@ namespace KGA_OOPConsoleProject
                 curScene.ChangeScene();
             }
 
-            End("게임 종료를 선택하셨습니다.");
+            End(reason);
 
         }
         public static void ChangeScene(string sceneName)

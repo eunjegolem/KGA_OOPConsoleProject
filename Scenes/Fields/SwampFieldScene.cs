@@ -44,6 +44,8 @@ namespace KGA_OOPConsoleProject.Scenes
             gameObjects = new List<GameObject>();
             gameObjects.Add(new Place("IslandFieldScene", 'I', new Vector2(1, 1)));
             gameObjects.Add(new Place("MountainFieldScene", 'M', new Vector2(18, 9)));
+
+            
         }
         public override void Enter()
         {
