@@ -23,7 +23,7 @@ namespace KGA_OOPConsoleProject.Scenes
             //플레이어 그리기
             Game.Player.Print();
             Console.SetCursorPosition(map.GetLength(1) + 1, 0);
-            Console.WriteLine(scenename);
+            Console.WriteLine(fieldname);
             Console.SetCursorPosition(map.GetLength(1) + 1, 1);
             Console.WriteLine("HP {0}/{1}, MP {2}/{3} ", Game.Player.curHP, Game.Player.MaxHP, Game.Player.curMP, Game.Player.MaxMP);
 
