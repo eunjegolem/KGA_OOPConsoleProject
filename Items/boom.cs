@@ -9,11 +9,11 @@ namespace KGA_OOPConsoleProject.Items
     public class Boom : Item
     {
         public Boom(Vector2 position)
-            : base('B', position, 100)
+            : base('B', position, 2)
         {
             name = "폭탄";
             description = "적을 공격하는 아이템";
-            price = 100;
+            
         }
 
         public override void Use()

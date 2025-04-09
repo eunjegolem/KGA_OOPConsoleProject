@@ -1,4 +1,5 @@
 ﻿using KGA_OOPConsoleProject.Scenes;
+using KGA_OOPConsoleProject.Scenes.Shops;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -80,6 +81,11 @@ namespace KGA_OOPConsoleProject
             sceneDic.Add("EquipmentShopScene", new EquipmentShopScene());
             sceneDic.Add("MagicShopScene", new MagicShopScene());
             sceneDic.Add("INNScene", new INNScene());
+            sceneDic.Add("Buyitem", new Buyitem());
+            sceneDic.Add("Sellitem", new Sellitem());
+            sceneDic.Add("Upgradeitem", new Upgradeitem());
+            sceneDic.Add("Confirm", new Confirm());
+
 
             curScene = sceneDic["Title"];
         }

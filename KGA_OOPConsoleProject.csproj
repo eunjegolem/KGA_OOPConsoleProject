@@ -55,6 +55,10 @@
     <Compile Include="Jobs\Job.cs" />
     <Compile Include="Jobs\Warrior.cs" />
     <Compile Include="Magics\Magic.cs" />
+    <Compile Include="Scenes\Shops\Buyitem.cs" />
+    <Compile Include="Scenes\Shops\Confirm.cs" />
+    <Compile Include="Scenes\Shops\Sellitem.cs" />
+    <Compile Include="Scenes\Shops\Upgradeitem.cs" />
     <Compile Include="traps\swamp.cs" />
     <Compile Include="GameObjects\Gold.cs" />
     <Compile Include="Player.cs" />

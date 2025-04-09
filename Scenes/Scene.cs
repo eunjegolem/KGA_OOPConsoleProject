@@ -11,6 +11,7 @@ namespace KGA_OOPConsoleProject.Scenes
         public string name;
         public string fieldname;
         protected ConsoleKey input;
+        protected List<GameObject> gameObjects;
 
         /// <summary>
         /// 씬의 상황 설명을 작성

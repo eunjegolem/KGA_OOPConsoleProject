@@ -23,7 +23,9 @@ namespace KGA_OOPConsoleProject.Scenes
         {
             Console.WriteLine("1. 잔다(1 Gold)  2. 나간다");
             Console.WriteLine();
-            Console.WriteLine("{0}Gold", Game.Player.gold);
+            Console.WriteLine("==========================");
+            Console.WriteLine("소지금 {0}Gold", Game.Player.gold);
+            Console.WriteLine("==========================");
         }
 
         public override void Input()

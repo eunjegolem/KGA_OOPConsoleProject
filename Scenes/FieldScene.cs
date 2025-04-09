@@ -10,7 +10,7 @@ namespace KGA_OOPConsoleProject.Scenes
         protected string[] mapData;
         protected bool[,] map;
 
-        protected List<GameObject> gameObjects;
+        
 
         public override void Render()
         {
