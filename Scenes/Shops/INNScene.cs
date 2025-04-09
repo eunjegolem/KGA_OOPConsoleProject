@@ -38,6 +38,7 @@ namespace KGA_OOPConsoleProject.Scenes
                         if(Game.Player.gold >10)
                         {
                             Console.WriteLine("방의 열쇠를 받았습니다.");
+                            Game.Player.gold -= 1;
                             return;
                         }
                         else
