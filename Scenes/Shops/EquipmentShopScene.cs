@@ -34,7 +34,7 @@ namespace KGA_OOPConsoleProject.Scenes
                 switch (input)
                 {
                     case "1":
-                        Console.WriteLine("상점의 장비를 삽니다.");
+                        Console.WriteLine("대장간의 장비를 삽니다.");
                         return;
                     case "2":
                         Console.WriteLine("보유한 장비를 팝니다.");
@@ -43,7 +43,7 @@ namespace KGA_OOPConsoleProject.Scenes
                         Console.WriteLine("보유한 장비를 강화합니다.");
                         return;
                     case "4":
-                        Console.WriteLine("상점을 나갑니다.");
+                        Console.WriteLine("대장간을 나갑니다.");
                         return;
                     default:
                         Console.WriteLine("잘못된 입력입니다.");

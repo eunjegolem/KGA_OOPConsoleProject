@@ -1,4 +1,5 @@
-﻿using KGA_OOPConsoleProject.GameObjects;
+﻿using KGA_OOPConsoleProject.Equipments;
+using KGA_OOPConsoleProject.GameObjects;
 using KGA_OOPConsoleProject.Items;
 using KGA_OOPConsoleProject.Maps;
 using System;
@@ -56,6 +57,7 @@ namespace KGA_OOPConsoleProject.Scenes
             gameObjects.Add(new Boom(new Vector2(3, 3)));
             gameObjects.Add(new Gold(new Vector2(5, 4)));
             gameObjects.Add(new Trap(new Vector2(4, 4)));
+            gameObjects.Add(new IronSword(new Vector2(5, 5)));
         }
         public override void Enter()
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KGA_OOPConsoleProject.Equipments;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,7 @@ namespace KGA_OOPConsoleProject
         public void Add(Item item)
         {
             items.Add(item);
-        }
+        }        
 
         public void Remove(Item item)
         {
