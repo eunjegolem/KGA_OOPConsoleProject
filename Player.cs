@@ -98,6 +98,7 @@ namespace KGA_OOPConsoleProject
             //Console.WriteLine($"행운: {luk}");
             //Console.WriteLine($"매력: {cham}");
 
+
         }
     }
 }

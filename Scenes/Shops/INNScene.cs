@@ -5,6 +5,7 @@ namespace KGA_OOPConsoleProject.Scenes
     class INNScene : Scene
     {
         string input;
+        
         public INNScene()
         {
             name = "INNScene";
@@ -34,7 +35,7 @@ namespace KGA_OOPConsoleProject.Scenes
                         Console.WriteLine("방의 열쇠를 받았습니다.");
                         return;
                     case "2":
-                        Console.WriteLine("여관을 나갑니다.1");
+                        Console.WriteLine("여관을 나갑니다.");
                         return;
                     default:
                         Console.WriteLine("잘못된 입력입니다.");
@@ -53,14 +54,10 @@ namespace KGA_OOPConsoleProject.Scenes
             switch (input)
             {
                 case "1":
+                    Game.Player.Heal(999);
                     Console.WriteLine("체력이 모두 회복되었습니다.");
                     return;
-                case "2":
-                    Console.WriteLine("여관을 나갑니다.2");
-                    return;
-                default:
-                    Console.WriteLine("잘못된 입력입니다.");
-                    break;
+                
             }
         }
 

@@ -10,6 +10,7 @@ namespace KGA_OOPConsoleProject.Scenes
     {
         public PlainFieldScene()
         {
+            
             name = "PlainFieldScene";
             mapData = new string[]
             {
@@ -35,7 +36,6 @@ namespace KGA_OOPConsoleProject.Scenes
               /*8*/  "#                  #",
               /*9*/  "####################"
             };
-
             map = new bool[20, 20];
             for (int y = 0; y < map.GetLength(0); y++)
             {

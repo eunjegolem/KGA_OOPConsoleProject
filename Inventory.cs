@@ -37,7 +37,9 @@ namespace KGA_OOPConsoleProject
 
         public void PrintALL()
         {
+            
             Console.WriteLine("==소유한 아이템=====");
+            Console.WriteLine("{0}Gold",Game.Player.gold);
             if (items.Count == 0)
             {
                 Console.WriteLine(" 없음 ");

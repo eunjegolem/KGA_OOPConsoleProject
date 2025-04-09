@@ -54,7 +54,7 @@
     <Compile Include="Jobs\Warrior.cs" />
     <Compile Include="Magics\Magic.cs" />
     <Compile Include="Maps\CampfireMap.cs" />
-    <Compile Include="Maps\Map.cs" />
+    <Compile Include="Items\Gold.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Items\Potion.cs" />
     <Compile Include="Program.cs" />

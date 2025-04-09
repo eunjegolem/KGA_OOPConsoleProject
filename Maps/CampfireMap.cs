@@ -2,7 +2,7 @@
 
 namespace KGA_OOPConsoleProject.Maps
 {
-    class CampfireMap : Map
+    class CampfireMap
     {
         //name = "CampfireMap";
         //mapData = new string[]
@@ -30,10 +30,7 @@ namespace KGA_OOPConsoleProject.Maps
         //      /*8*/  "#                  #",
         //      /*9*/  "####################"
         //    };
-        public override void Gate()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 
 

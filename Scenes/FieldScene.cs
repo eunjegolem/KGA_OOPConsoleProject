@@ -26,7 +26,8 @@ namespace KGA_OOPConsoleProject.Scenes
             //플레이어 그리기
             Game.Player.Print();
 
-            Console.SetCursorPosition(0, map.GetLength(0) + 2);
+            Console.SetCursorPosition(0, map.GetLength(0) + 1);
+            Console.WriteLine("HP {0}/{1}, MP {2}/{3} ", Game.Player.curHP, Game.Player.MaxHP, Game.Player.curMP, Game.Player.MaxMP);
             //인벤토리 그리기
             Game.Player.Inventory.PrintALL();
         }

@@ -31,8 +31,9 @@ namespace KGA_OOPConsoleProject.Scenes
             map = new bool[8, 8];
             for (int y = 0; y < map.GetLength(0); y++)
             {
+                
                 for (int x = 0; x < map.GetLength(1); x++)
-                {
+                {   
                     map[y, x] = mapData[y][x] != '#';
                 }
             }
@@ -52,6 +53,7 @@ namespace KGA_OOPConsoleProject.Scenes
             }
             gameObjects.Add(new Potion(new Vector2(3, 4)));
             gameObjects.Add(new Boom(new Vector2(3, 3)));
+            gameObjects.Add(new Gold(new Vector2(5, 4)));
         }
         public override void Enter()
         {

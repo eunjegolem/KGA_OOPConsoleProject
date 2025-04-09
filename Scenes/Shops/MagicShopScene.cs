@@ -13,7 +13,7 @@ namespace KGA_OOPConsoleProject.Scenes
         {
             Console.WriteLine("\"마법~ 마법 사세요~\"");
             Console.WriteLine();
-            Console.WriteLine("스크롤들이 많이 보인다.");
+            Console.WriteLine("마법책들이 많이 보인다.");
             Console.WriteLine("어떤 거래를 하시겠습니까?");
         }
 
@@ -31,7 +31,7 @@ namespace KGA_OOPConsoleProject.Scenes
                 switch (input)
                 {
                     case "1":
-                        Console.WriteLine("상점의 아이템을 삽니다.");
+                        Console.WriteLine("상점의 마법책을 삽니다.");
                         return;
                     case "2":
                         Console.WriteLine("보유한 아이템을 팝니다.");

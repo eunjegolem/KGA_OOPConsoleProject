@@ -13,6 +13,7 @@ namespace KGA_OOPConsoleProject.Items
         {
             name = "폭탄";
             description = "적을 공격하는 아이템";
+            price = 100;
         }
 
         public override void Use()
