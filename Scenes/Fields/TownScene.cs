@@ -11,6 +11,7 @@ namespace KGA_OOPConsoleProject.Scenes
         public TownScene()
         {
             name = "TownScene";
+            scenename = "Town";
             mapData = new string[]
             {
               //      01234567890123456789

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject.Scenes
 {
@@ -25,11 +22,15 @@ namespace KGA_OOPConsoleProject.Scenes
             }
             //플레이어 그리기
             Game.Player.Print();
-
-            Console.SetCursorPosition(0, map.GetLength(0) + 1);
+            Console.SetCursorPosition(map.GetLength(1) + 1, 0);
+            Console.WriteLine(scenename);
+            Console.SetCursorPosition(map.GetLength(1) + 1, 1);
             Console.WriteLine("HP {0}/{1}, MP {2}/{3} ", Game.Player.curHP, Game.Player.MaxHP, Game.Player.curMP, Game.Player.MaxMP);
+
+            Console.SetCursorPosition(0, map.GetLength(1));
             //인벤토리 그리기
             Game.Player.Inventory.PrintALL();
+
         }
         public override void Choice()
         {
@@ -48,11 +49,11 @@ namespace KGA_OOPConsoleProject.Scenes
 
         public override void Result()
         {
-            
+
         }
         public override void Wait()
         {
-            
+
         }
         public override void ChangeScene()
         {

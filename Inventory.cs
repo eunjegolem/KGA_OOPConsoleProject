@@ -9,7 +9,7 @@ namespace KGA_OOPConsoleProject
 {
     public class Inventory
     {
-        private List<Item> items;
+        public List<Item> items;
 
         public Inventory()
         {

@@ -23,6 +23,7 @@ namespace KGA_OOPConsoleProject
 
         public static bool gameOver;
         public static string reason;
+        
 
         public static void Run()
         {

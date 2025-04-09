@@ -8,6 +8,7 @@ namespace KGA_OOPConsoleProject.Scenes
         public ForestFieldScene()
         {
             name = "ForestFieldScene";
+            fieldname = "Forest";
             mapData = new string[]
             {
               //      01234567890123456789

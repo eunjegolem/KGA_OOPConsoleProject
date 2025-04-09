@@ -11,6 +11,7 @@ namespace KGA_OOPConsoleProject.Scenes
         public IslandFieldScene()
         {
             name = "IslandFieldScene";
+            fieldname = "Island";
             mapData = new string[]
             {
               //      01234567890123456789

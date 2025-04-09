@@ -9,6 +9,7 @@ namespace KGA_OOPConsoleProject.Scenes
     public abstract class Scene
     {
         public string name;
+        public string fieldname;
         protected ConsoleKey input;
 
         /// <summary>

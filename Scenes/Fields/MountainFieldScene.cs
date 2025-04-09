@@ -11,6 +11,7 @@ namespace KGA_OOPConsoleProject.Scenes
         public MountainFieldScene()
         {
             name = "MountainFieldScene";
+            fieldname = "Mountain";
             mapData = new string[]
                 {
               //      01234567890123456789

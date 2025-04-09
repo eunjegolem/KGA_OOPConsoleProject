@@ -17,6 +17,7 @@ namespace KGA_OOPConsoleProject.Scenes
         public CampFireFieldScene()
         {
             name = "CampFireFieldScene";
+            fieldname = "CampFire";
             mapData = new string[]
             {
               //      012345678

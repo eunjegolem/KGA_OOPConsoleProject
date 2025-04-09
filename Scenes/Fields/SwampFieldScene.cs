@@ -7,6 +7,7 @@ namespace KGA_OOPConsoleProject.Scenes
         public SwampFieldScene()
         {
             name = "SwampFieldScene";
+            fieldname = "Swamp";
             mapData = new string[]
                 {
               //      01234567890123456789

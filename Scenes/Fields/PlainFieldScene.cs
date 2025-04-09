@@ -12,6 +12,7 @@ namespace KGA_OOPConsoleProject.Scenes
         {
             
             name = "PlainFieldScene";
+            fieldname = "Plain";
             mapData = new string[]
             {
               //      01234567890123456789
