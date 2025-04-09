@@ -15,11 +15,14 @@ namespace KGA_OOPConsoleProject.Scenes
             Console.WriteLine();
             Console.WriteLine("장비들이 많이 보인다.");
             Console.WriteLine("어떤 거래를 하시겠습니까?");
+            
         }
 
         public override void Choice()
         {
             Console.WriteLine("1. 산다  2. 판다 3. 강화한다. 4. 나간다");
+            Console.WriteLine();
+            Game.Player.Inventory.PrintALL();
         }
 
         public override void Input()
@@ -77,6 +80,9 @@ namespace KGA_OOPConsoleProject.Scenes
                     //sell item
                     return;
                 case "3":
+                    //upgrade item
+                    return;
+                case "4":
                     Game.ChangeScene("TownScene");
                     return;
             }

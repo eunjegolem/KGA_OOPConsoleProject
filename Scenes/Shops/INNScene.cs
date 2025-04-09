@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KGA_OOPConsoleProject.Maps;
+using System;
 
 namespace KGA_OOPConsoleProject.Scenes
 {
@@ -20,7 +21,9 @@ namespace KGA_OOPConsoleProject.Scenes
 
         public override void Choice()
         {
-            Console.WriteLine("1. 잔다  2. 나간다");
+            Console.WriteLine("1. 잔다(1 Gold)  2. 나간다");
+            Console.WriteLine();
+            Console.WriteLine("{0}Gold", Game.Player.gold);
         }
 
         public override void Input()
@@ -32,8 +35,16 @@ namespace KGA_OOPConsoleProject.Scenes
                 switch (input)
                 {
                     case "1":
-                        Console.WriteLine("방의 열쇠를 받았습니다.");
-                        return;
+                        if(Game.Player.gold >10)
+                        {
+                            Console.WriteLine("방의 열쇠를 받았습니다.");
+                            return;
+                        }
+                        else
+                        {
+                            Console.WriteLine("소지금이 부족합니다.");
+                            break;
+                        }
                     case "2":
                         Console.WriteLine("여관을 나갑니다.");
                         return;
@@ -73,12 +84,7 @@ namespace KGA_OOPConsoleProject.Scenes
             switch (input)
             {
                 case "1":
-                    //buy item
-                    return;
                 case "2":
-                    //sell item
-                    return;
-                case "3":
                     Game.ChangeScene("TownScene");
                     return;
             }

@@ -20,6 +20,8 @@ namespace KGA_OOPConsoleProject.Scenes
         public override void Choice()
         {
             Console.WriteLine("1. 산다  2. 판다 3. 나간다");
+            Console.WriteLine();
+            Game.Player.Inventory.PrintALL();
         }
 
         public override void Input()
