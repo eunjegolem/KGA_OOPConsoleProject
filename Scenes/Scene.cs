@@ -46,9 +46,9 @@ namespace KGA_OOPConsoleProject.Scenes
         /// </summary>
         public abstract void ChangeScene();
 
-        //메뉴 이동 : 들어가기
+        //화면에 들어갈때 플레이어 위치
         public virtual void Enter() { }
-        //메뉴 이동 : 나가기
+        
         public virtual void Exit() { }
 
     }

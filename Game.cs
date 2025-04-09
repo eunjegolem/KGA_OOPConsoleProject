@@ -65,6 +65,7 @@ namespace KGA_OOPConsoleProject
             // 씬 설정
             sceneDic = new Dictionary<string, Scene>();
             sceneDic.Add("Title", new Title());
+            //필드 씬
             sceneDic.Add("CampFireFieldScene", new CampFireFieldScene());
             sceneDic.Add("TownScene", new TownScene());
             sceneDic.Add("ForestFieldScene", new ForestFieldScene());
@@ -72,6 +73,7 @@ namespace KGA_OOPConsoleProject
             sceneDic.Add("IslandFieldScene", new IslandFieldScene());
             sceneDic.Add("SwampFieldScene", new SwampFieldScene());
             sceneDic.Add("MountainFieldScene", new MountainFieldScene());
+            //상점 씬
             sceneDic.Add("ItemShopScene", new ItemShopScene());
             sceneDic.Add("EquipmentShopScene", new EquipmentShopScene());
             sceneDic.Add("MagicShopScene", new MagicShopScene());

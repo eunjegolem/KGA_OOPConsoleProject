@@ -17,15 +17,17 @@ namespace KGA_OOPConsoleProject.Scenes
 
         public override void Render()
         {
+            //맵 그리기
             PrintMap();
             foreach (GameObject go in gameObjects)
             {
                 go.Print();
             }
-
+            //플레이어 그리기
             Game.Player.Print();
 
             Console.SetCursorPosition(0, map.GetLength(0) + 2);
+            //인벤토리 그리기
             Game.Player.Inventory.PrintALL();
         }
         public override void Choice()
@@ -45,6 +47,14 @@ namespace KGA_OOPConsoleProject.Scenes
 
         public override void Result()
         {
+            
+        }
+        public override void Wait()
+        {
+            
+        }
+        public override void ChangeScene()
+        {
             foreach (GameObject go in gameObjects)
             {
                 if (Game.Player.position == go.position)
@@ -57,14 +67,6 @@ namespace KGA_OOPConsoleProject.Scenes
                     break;
                 }
             }
-        }
-        public override void Wait()
-        {
-
-        }
-        public override void ChangeScene()
-        {
-
         }
 
         private void PrintMap()

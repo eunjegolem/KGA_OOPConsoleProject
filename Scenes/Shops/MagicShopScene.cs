@@ -1,29 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject.Scenes
 {
-    class EquipmentShopScene : Scene
+    class MagicShopScene : Scene
     {
         string input;
-        public EquipmentShopScene()
+        public MagicShopScene()
         {
-            name = "EquipmentShopScene";
+            name = "MagicShopScene";
         }
         public override void Render()
         {
-            Console.WriteLine("\"어이쿠 손이 미끄러졌네! 어서오세요~\"");
+            Console.WriteLine("\"마법~ 마법 사세요~\"");
             Console.WriteLine();
-            Console.WriteLine("장비들이 많이 보인다.");
+            Console.WriteLine("스크롤들이 많이 보인다.");
             Console.WriteLine("어떤 거래를 하시겠습니까?");
         }
 
         public override void Choice()
         {
-            Console.WriteLine("1. 산다  2. 판다 3. 강화한다. 4. 나간다");
+            Console.WriteLine("1. 산다  2. 판다 3. 나간다");
         }
 
         public override void Input()
@@ -35,15 +31,12 @@ namespace KGA_OOPConsoleProject.Scenes
                 switch (input)
                 {
                     case "1":
-                        Console.WriteLine("상점의 장비를 삽니다.");
+                        Console.WriteLine("상점의 아이템을 삽니다.");
                         return;
                     case "2":
-                        Console.WriteLine("보유한 장비를 팝니다.");
+                        Console.WriteLine("보유한 아이템을 팝니다.");
                         return;
                     case "3":
-                        Console.WriteLine("보유한 장비를 강화합니다.");
-                        return;
-                    case "4":
                         Console.WriteLine("상점을 나갑니다.");
                         return;
                     default:
@@ -72,24 +65,18 @@ namespace KGA_OOPConsoleProject.Scenes
         }
         public override void ChangeScene()
         {
-            while (true)
+            switch (input)
             {
-                input = Console.ReadLine();
-
-                switch (input)
-                {
-                    case "1":
-                        //buy item
-                        return;
-                    case "2":
-                        //sell item
-                        return;
-                    case "3":
-                        Game.ChangeScene("TownScene");
-                        return;
-                }
+                case "1":
+                    //buy item
+                    return;
+                case "2":
+                    //sell item
+                    return;
+                case "3":
+                    Game.ChangeScene("TownScene");
+                    return;
             }
-
         }
     }
 }

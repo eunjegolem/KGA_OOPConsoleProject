@@ -50,6 +50,7 @@ namespace KGA_OOPConsoleProject.Scenes
             gameObjects.Add(new Place("PlainFieldScene", 'G', new Vector2(10, 1)));
             gameObjects.Add(new Place("PlainFieldScene", 'G', new Vector2(1, 10)));
             gameObjects.Add(new Place("PlainFieldScene", 'G', new Vector2(18, 10)));
+
             gameObjects.Add(new Place("ItemShopScene", 'I', new Vector2(4, 15)));
             gameObjects.Add(new Place("EquipmentShopScene", 'E', new Vector2(15, 15)));
             gameObjects.Add(new Place("MagicShopScene", 'M', new Vector2(4, 4)));

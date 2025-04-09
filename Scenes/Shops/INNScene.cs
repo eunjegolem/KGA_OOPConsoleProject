@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject.Scenes
 {
-    class INNScene :Scene
+    class INNScene : Scene
     {
         string input;
         public INNScene()
@@ -77,24 +73,18 @@ namespace KGA_OOPConsoleProject.Scenes
         }
         public override void ChangeScene()
         {
-            while (true)
+            switch (input)
             {
-                input = Console.ReadLine();
-
-                switch (input)
-                {
-                    case "1":
-                        //buy item
-                        return;
-                    case "2":
-                        //sell item
-                        return;
-                    case "3":
-                        Game.ChangeScene("TownScene");
-                        return;
-                }
+                case "1":
+                    //buy item
+                    return;
+                case "2":
+                    //sell item
+                    return;
+                case "3":
+                    Game.ChangeScene("TownScene");
+                    return;
             }
-
         }
     }
 }
