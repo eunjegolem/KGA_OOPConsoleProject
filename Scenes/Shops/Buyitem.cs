@@ -11,8 +11,11 @@ namespace KGA_OOPConsoleProject.Scenes.Shops
     class Buyitem : Scene
     {
         string input;
-        public string targetitem;
         
+
+        Potion Potion = new Potion(new Vector2(0, 0));
+        Boom Boom = new Boom(new Vector2(0, 0));
+        IronSword IronSword = new IronSword(new Vector2(0, 0));
 
         public Buyitem()
         {
@@ -54,10 +57,11 @@ namespace KGA_OOPConsoleProject.Scenes.Shops
                 {
                     case "1":
                         //구매할 아이템의 가격을 플레이어의 소지금과 비교한다.
-                        if(Game.Player.gold > 1)
+                        if(Game.Player.gold > Potion.price)
                         {
                             //확인한다.
-                            //targetitem = Item.potion;
+                            targetitem = Potion.name;
+
                             return;
                         }
                         else
@@ -68,9 +72,10 @@ namespace KGA_OOPConsoleProject.Scenes.Shops
 
                         
                     case "2":
-                        if (Game.Player.gold > 2)
+                        if (Game.Player.gold > Boom.price)
                         {
                             //확인한다.
+                            targetitem = Boom.name;
                             return;
                         }
                         else
@@ -81,9 +86,10 @@ namespace KGA_OOPConsoleProject.Scenes.Shops
 
                         return;
                     case "3":
-                        if (Game.Player.gold > 3)
+                        if (Game.Player.gold > IronSword.price)
                         {
                             //확인한다.
+                            targetitem = IronSword.name;
                             return;
                         }
                         else
