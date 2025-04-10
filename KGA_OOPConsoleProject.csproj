@@ -43,18 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DamageAreas\CampFire.cs" />
+    <Compile Include="DamageAreas\Swamp.cs" />
+    <Compile Include="GameObjects\DamegeArea.cs" />
+    <Compile Include="GameObjects\Monster.cs" />
     <Compile Include="Items\IronSword.cs" />
     <Compile Include="GameObjects\Equipment.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\Shop.cs" />
-    <Compile Include="GameObjects\Trap.cs" />
+    <Compile Include="DamageAreas\Trap.cs" />
     <Compile Include="IInteractable.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Items\Boom.cs" />
     <Compile Include="Jobs\Job.cs" />
     <Compile Include="Jobs\Warrior.cs" />
     <Compile Include="Magics\Magic.cs" />
+    <Compile Include="Monsters\Goblin.cs" />
+    <Compile Include="Scenes\BattleScene.cs" />
     <Compile Include="Scenes\Shops\Buyitem.cs" />
     <Compile Include="Scenes\Shops\Confirm.cs" />
     <Compile Include="Scenes\Shops\Sellitem.cs" />

@@ -59,10 +59,15 @@ namespace KGA_OOPConsoleProject.Scenes.Shops
                         //구매할 아이템의 가격을 플레이어의 소지금과 비교한다.
                         if(Game.Player.gold > Potion.price)
                         {
-                            //확인한다.
-                            targetitem = Potion.name;
+                            //소지금을 차감하고 아이템을 리스트에 추가함
+                            Game.Player.gold -= Potion.price;
+                            //추가 기능 미구현
+                            //Inventory.Add();
 
-                            return;
+                            //컴펌클래스로 이관 : 하려 했으나 설계 변경을 요함
+                            //targetitem = Potion.name;
+
+                            break;
                         }
                         else
                         {
@@ -74,8 +79,11 @@ namespace KGA_OOPConsoleProject.Scenes.Shops
                     case "2":
                         if (Game.Player.gold > Boom.price)
                         {
-                            //확인한다.
-                            targetitem = Boom.name;
+                            //소지금을 차감하고 아이템을 리스트에 추가함
+                            Game.Player.gold -= Potion.price;
+                            
+                            //컴펌클래스로 이관 : 하려 했으나 설계 변경을 요함
+                            //targetitem = Boom.name;
                             return;
                         }
                         else
@@ -88,8 +96,11 @@ namespace KGA_OOPConsoleProject.Scenes.Shops
                     case "3":
                         if (Game.Player.gold > IronSword.price)
                         {
-                            //확인한다.
-                            targetitem = IronSword.name;
+                            //소지금을 차감하고 아이템을 리스트에 추가함
+                            Game.Player.gold -= Potion.price;
+                            
+                            //컴펌클래스로 이관 : 하려 했으나 설계 변경을 요함
+                            //targetitem = IronSword.name;
                             return;
                         }
                         else
@@ -142,8 +153,8 @@ namespace KGA_OOPConsoleProject.Scenes.Shops
                 case "1":
                 case "2":
                 case "3":
-                    Game.ChangeScene("Confirm");
-                    return;
+                    //Game.ChangeScene("Confirm");
+                    //return;
                 case "4":
                     Game.ChangeScene("ItemShopScene");
                     return;

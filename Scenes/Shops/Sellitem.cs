@@ -34,6 +34,7 @@ namespace KGA_OOPConsoleProject.Scenes.Shops
         public override void Input()
         {
             //항목의 숫자를 입력한다.
+
         }
         public override void Update()
         {
@@ -63,8 +64,8 @@ namespace KGA_OOPConsoleProject.Scenes.Shops
             {
                 case "1":
                 case "2":
-                    Game.ChangeScene("Confirm");
-                    return;
+                    //Game.ChangeScene("Confirm");
+                    //return;
                 case "3":
                     Game.ChangeScene("TownScene");
                     return;

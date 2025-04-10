@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using KGA_OOPConsoleProject.GameObjects;
+using System.Collections.Generic;
 
 namespace KGA_OOPConsoleProject.Scenes
 {
@@ -45,8 +46,9 @@ namespace KGA_OOPConsoleProject.Scenes
             gameObjects = new List<GameObject>();
             gameObjects.Add(new Place("IslandFieldScene", 'I', new Vector2(1, 1)));
             gameObjects.Add(new Place("MountainFieldScene", 'M', new Vector2(18, 9)));
+            gameObjects.Add(new Swamp(new Vector2(4, 4)));
 
-            
+
         }
         public override void Enter()
         {

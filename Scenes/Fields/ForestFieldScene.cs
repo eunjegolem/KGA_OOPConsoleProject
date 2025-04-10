@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using KGA_OOPConsoleProject.GameObjects;
+using KGA_OOPConsoleProject.Maps;
+using System.Collections.Generic;
 
 namespace KGA_OOPConsoleProject.Scenes
 {
@@ -46,6 +48,8 @@ namespace KGA_OOPConsoleProject.Scenes
             gameObjects = new List<GameObject>();
             gameObjects.Add(new Place("CampFireFieldScene", 'C', new Vector2(2, 10)));
             gameObjects.Add(new Place("PlainFieldScene", 'P', new Vector2(18, 1)));
+            gameObjects.Add(new Goblin(new Vector2(5, 4)));
+            gameObjects.Add(new Trap(new Vector2(4, 4)));
         }
         public override void Enter()
         {

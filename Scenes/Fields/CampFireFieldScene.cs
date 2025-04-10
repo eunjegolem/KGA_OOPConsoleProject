@@ -57,7 +57,7 @@ namespace KGA_OOPConsoleProject.Scenes
             gameObjects.Add(new Potion(new Vector2(3, 4)));
             gameObjects.Add(new Boom(new Vector2(3, 3)));
             gameObjects.Add(new Gold(new Vector2(5, 4)));
-            gameObjects.Add(new Trap(new Vector2(4, 4)));
+            gameObjects.Add(new CampFire(new Vector2(4, 4)));
             gameObjects.Add(new IronSword(new Vector2(5, 5)));
         }
         public override void Enter()

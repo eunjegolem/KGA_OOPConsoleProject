@@ -13,8 +13,7 @@ namespace KGA_OOPConsoleProject.Maps
         string name = "골드";
         string description = "재화";
         int    price = 1;
-        public Gold(Vector2 position)
-            : base(ConsoleColor.Yellow, 'G', position, true)
+        public Gold(Vector2 position) : base(ConsoleColor.Yellow, 'G', position, true)
         {
             name = "골드";
             description = "재화";

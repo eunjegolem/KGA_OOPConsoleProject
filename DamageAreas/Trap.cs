@@ -7,13 +7,9 @@ using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject.GameObjects
 {
-    class Trap : GameObject
+    class Trap : DamegeArea
     {
-        public string name;
-        public string description;
-
-        public Trap(Vector2 position)
-            : base(ConsoleColor.Red, 'F', position, false)
+        public Trap(Vector2 position) : base('T', position, false)
         {
             name = "함정";
             description = "플레이어가 데미지를 입는다.";

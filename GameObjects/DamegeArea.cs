@@ -6,22 +6,19 @@ using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject
 {
-    public abstract class Item : GameObject
+    public abstract class DamegeArea : GameObject
     {
         public string name;
         public string description;
-        public int price;
 
-        public Item(char symbol, Vector2 position, int price) : base(ConsoleColor.Yellow, symbol, position, true)
+        public DamegeArea(char symbol, Vector2 position, bool isOnce) : base(ConsoleColor.Red, symbol, position, isOnce)
         {
-            this.price = price;
+           
         }
 
         public override void Interact(Player player)
         {
-            player.Inventory.Add(this);
+            
         }
-
-        public abstract void Use();
     }
 }
